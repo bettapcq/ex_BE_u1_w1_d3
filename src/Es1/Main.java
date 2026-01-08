@@ -8,6 +8,6 @@ public class Main {
         r1.stampaRettangolo();
         r2.stampaRettangolo();
 
-        Es1.Rettangolo.stampa2Rettangoli(r1, r2);
+        Rettangolo.stampa2Rettangoli(r1, r2);
     }
 }
