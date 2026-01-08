@@ -24,6 +24,19 @@ public class Cliente {
 
 
     //metodi:
+
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "idCliente=" + idCliente +
+                ", dataIscrizione='" + dataIscrizione + '\'' +
+                ", nome='" + nome + '\'' +
+                ", cognome='" + cognome + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
     public int getIdCliente() {
         return idCliente;
     }

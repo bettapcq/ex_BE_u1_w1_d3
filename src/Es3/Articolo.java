@@ -20,6 +20,16 @@ public class Articolo {
     //metodi:
 
 
+    @Override
+    public String toString() {
+        return "Articolo{" +
+                "codice='" + codice + '\'' +
+                ", descrizione='" + descrizione + '\'' +
+                ", prezzo=" + prezzo +
+                ", numeroInStock=" + numeroInStock +
+                '}';
+    }
+
     public String getCodice() {
         return codice;
     }

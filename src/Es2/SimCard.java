@@ -26,4 +26,17 @@ public class SimCard {
                 ", last5Calls=" + Arrays.toString(last5Calls) +
                 '}';
     }
+
+    public String getTelNumber() {
+        return telNumber;
+    }
+
+    public void setCredit(int credit) {
+        this.credit = credit;
+    }
+
+    public void setLast5Calls(Call[] last5Calls) {
+        this.last5Calls = last5Calls;
+    }
+
 }
