@@ -21,5 +21,13 @@ public class Call {
                 '}';
     }
 
+    public int getMins() {
+        return mins;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
 
 }
