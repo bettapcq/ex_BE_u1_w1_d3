@@ -6,7 +6,7 @@ public class Articolo {
     private final String codice;
     private final String descrizione;
     private int prezzo;
-    private int numeroInStock = 0;
+    private int numeroInStock;
 
 
     //costruttori:
@@ -53,4 +53,5 @@ public class Articolo {
     public void setNumeroInStock(int numeroInStock) {
         this.numeroInStock = numeroInStock;
     }
+
 }

@@ -7,7 +7,7 @@ public class Cliente {
 
     //attributi:
     private final int idCliente;
-    private final String dataIscrizione;
+    private final LocalDate dataIscrizione;
     private String nome;
     private String cognome;
     private String email;
@@ -19,7 +19,7 @@ public class Cliente {
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
-        this.dataIscrizione = LocalDate.now().toString();
+        this.dataIscrizione = LocalDate.now();
     }
 
 
@@ -65,7 +65,7 @@ public class Cliente {
         this.email = email;
     }
 
-    public String getDataIscrizione() {
+    public LocalDate getDataIscrizione() {
         return dataIscrizione;
     }
 }

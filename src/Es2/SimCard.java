@@ -13,7 +13,7 @@ public class SimCard {
     public SimCard(String telNumber) {
         this.telNumber = telNumber;
         this.credit = 0;
-        this.last5Calls = new Call[0];
+        this.last5Calls = new Call[5];
     }
 
     //metodi:
@@ -31,23 +31,21 @@ public class SimCard {
         return telNumber;
     }
 
+    public int getCredit() {
+        return credit;
+    }
+
     public void setCredit(int credit) {
         this.credit = credit;
+    }
+
+    public Call[] getLast5Calls() {
+        return last5Calls;
     }
 
     public void setLast5Calls(Call[] last5Calls) {
         this.last5Calls = last5Calls;
     }
 
-    public void addCalls(Call call) {
-        Call[] nuovoArray = new Call[last5Calls.length + 1];
-
-        for (int i = 0; i < last5Calls.length; i++) {
-            nuovoArray[i] = last5Calls[i];
-        }
-
-        nuovoArray[last5Calls.length] = call;
-        last5Calls = nuovoArray;
-    }
 
 }
