@@ -1,5 +1,6 @@
 package Es3;
 
+
 public class Main {
     public static void main(String[] args) {
         Cliente c1 = new Cliente("Betta", "Piac", "betta.piac@g.com");
@@ -9,6 +10,5 @@ public class Main {
         System.out.println(c2);
 
     }
-
 
 }

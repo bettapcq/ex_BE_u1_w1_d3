@@ -39,4 +39,15 @@ public class SimCard {
         this.last5Calls = last5Calls;
     }
 
+    public void addCalls(Call call) {
+        Call[] nuovoArray = new Call[last5Calls.length + 1];
+
+        for (int i = 0; i < last5Calls.length; i++) {
+            nuovoArray[i] = last5Calls[i];
+        }
+
+        nuovoArray[last5Calls.length] = call;
+        last5Calls = nuovoArray;
+    }
+
 }
